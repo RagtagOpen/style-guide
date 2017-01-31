@@ -1,4 +1,8 @@
 # Images
 These are the images:
 
-![white on black](/Ragtagteam/style-guide/raw/images/white-on-black.png)
+![the logo](https://rawgit.com/Ragtagteam/style-guide/master/images/logo.png)
+
+![white on black](https://rawgit.com/Ragtagteam/style-guide/master/images/white-on-black.png)
+
+![black on white](https://rawgit.com/Ragtagteam/style-guide/master/images/black-on-white.png)
