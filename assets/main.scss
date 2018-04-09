@@ -1,0 +1,18 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import 'variables';
+@import 'colors';
+@import 'normalize';
+@import 'typography';
+@import 'layout';
+@import 'mark';
+@import 'header';
+@import 'content';
+@import 'footer';
+
+html,
+body {
+  background-color: $gray-light;
+}

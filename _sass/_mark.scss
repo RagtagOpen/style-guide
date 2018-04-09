@@ -1,0 +1,33 @@
+.ragtag-mark-background {
+  display: inline-block;
+  line-height: 1;
+  padding: 15px;
+
+  &-gradient {
+    background: radial-gradient($orange-light, $orange);
+
+    .ragtag-mark-shadow {
+      stroke: none;
+    }
+  }
+
+  &-circle {
+    border-radius: 50%;
+  }
+
+  &-inverse {
+    background: $black;
+  }
+}
+
+.ragtag-mark-inverse,
+.ragtag-mark-background-inverse {
+  .ragtag-mark-type {
+    fill: $white;
+  }
+
+  .ragtag-mark-shadow {
+    fill: $black;
+    stroke: $white;
+  }
+}

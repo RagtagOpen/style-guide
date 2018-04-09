@@ -1,0 +1,194 @@
+h1,
+h2,
+h3,
+p {
+  margin: 1rem auto;
+}
+
+a {
+  color: $orange;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+section {
+  align-items: stretch;
+  background: $white;
+  border-radius: 3px;
+  box-shadow: $box-shadow;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 1rem 0;
+  padding: 1rem;
+
+  @media (min-width: 786px) {
+    padding: 2rem;
+  }
+
+  h1,
+  h2,
+  h3,
+  p,
+  ul,
+  ol {
+    width: 100%;
+  }
+
+  > :first-child {
+    margin-top: 0;
+  }
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+
+  h2 {
+    color: $gray;
+    flex: 0 1 auto;
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin: 0;
+    width: 100%;
+  }
+
+  > h2:first-child {
+    @media (min-width: 768px) {
+      margin-top: -1rem;
+    }
+  }
+
+  h3 {
+    color: $orange;
+    margin-bottom: 0;
+    margin-top: 2rem;
+
+    + p {
+      margin-top: 0.5rem;
+    }
+  }
+
+  h2 + h3 {
+    margin-top: 1rem;
+  }
+}
+
+figure {
+  display: inline-block;
+  flex: 0 0 auto;
+  margin: 1rem 1rem 0 0;
+
+  figcaption {
+    color: $gray;
+    font-size: 0.875rem;
+    font-style: italic;
+  }
+}
+
+code {
+  word-break: break-all;
+}
+
+#intro {
+  font-size: 1.5rem;
+
+  @media (min-width: 768px) {
+    font-size: 3rem;
+  }
+
+  p {
+    font-weight: 300;
+    text-align: center;
+  }
+}
+
+.color-swatches {
+  list-style: none;
+  margin: 1rem -0.5rem;
+  padding: 0;
+  width: auto;
+
+  li {
+    display: inline-block;
+    margin: 0.5rem;
+    max-width: 311px;
+    width: 100%;
+
+    @media (min-width: 768px) {
+      max-width: calc(25% - 1rem);
+    }
+  }
+}
+
+.color-swatch {
+  display: block;
+  margin: 0 0 0.5rem;
+  padding: 100% 0 0;
+  width: 100%;
+
+  &-orange {
+    background-color: $orange;
+  }
+
+  &-black {
+    background-color: $black;
+  }
+
+  &-gray {
+    background-color: $gray;
+  }
+
+  &-gray-light {
+    background-color: $gray-light;
+  }
+
+  &-label {
+    font-weight: 700;
+  }
+
+  &-values {
+    align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 0.5rem 0 0;
+    padding: 0;
+
+    dt {
+      flex: 0 1 auto;
+      margin: 0 1rem 0.5rem 0;
+      width: 5em;
+    }
+
+    dd {
+      flex: 1 0 auto;
+      margin: 0 0 0.5rem;
+      width: calc(100% - 5em - 1.01rem);
+    }
+  }
+}
+
+.button {
+  background: $orange;
+  border-radius: 3px;
+  box-shadow: $box-shadow;
+  color: $white;
+  display: inline-block;
+  font-size: 1rem;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.2s;
+  will-change: background-color;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: desaturate($orange, 10%);
+  }
+}

@@ -1,0 +1,54 @@
+html {
+  padding-top: 74px;
+}
+
+.site-header {
+  background: $white;
+  box-shadow: $box-shadow;
+  left: 0;
+  line-height: 1;
+  padding: 12px 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 10;
+
+  h1 {
+    font-size: inherit;
+    margin: 0;
+  }
+}
+
+.site-title {
+  align-items: center;
+  color: $black;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  font-weight: 700;
+  justify-content: center;
+  text-decoration: none;
+  transition: 0.2s;
+  will-change: color;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $orange;
+  }
+
+  .ragtag-mark {
+    flex: 1 1 auto;
+    height: 48px;
+    margin-right: 12px;
+    width: auto;
+
+    // &-shadow {
+    //   stroke: currentColor;
+    // }
+    //
+    // &-type {
+    //   fill: currentColor;
+    // }
+  }
+}
