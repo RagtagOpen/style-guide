@@ -118,6 +118,8 @@ When paired with a tagline like "Empowered by", the tagline's baseline should si
 
 [Source Sans Pro](https://fonts.google.com/specimen/Source+Sans+Pro), an open-source typeface by Adobe, is our secondary typeface. It should be used for anything not set in Operator.
 
+_To improve accessibility, the base font size should be 18px._
+
 </section>
 
 <section markdown="1">
@@ -162,6 +164,8 @@ When paired with a tagline like "Empowered by", the tagline's baseline should si
     </dl>
   </li>
 </ul>
+
+_To improve accessibility, use #db2800 as the orange for link text or button backgrounds. This shade has a higher contrast ratio with white backgrounds._
 
 CSS gradient for wordmark background: `background-image: radial-gradient(#ff8447, #ff2f00)`
 
