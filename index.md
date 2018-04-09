@@ -77,14 +77,14 @@ In applications where the full wordmark doesn't fit, such as social media avatar
 On all projects we support, unless otherwise noted, the Empowered by Ragtag Mark should appear in the footer of the site, with a link back to [ragtag.org](https://ragtag.org). Please replace `<project_name>` in the URL with the name of the project.
 
 <figure>
-  <span class="ragtag-mark-background"><img src="https://assets.ragtag.tech/empowered-by-ragtag.svg"></span>
+  <span class="ragtag-mark-background"><img src="https://assets.ragtag.tech/empowered-by-ragtag.svg" alt="Empowered by Ragtag"></span>
   <figcaption>Over light background</figcaption>
 </figure>
 
 `<a href="https://ragtag.org/?utm_medium=web&amp;utm_source=<project_name>&amp;utm_name=empowered-badge"><img src="https://assets.ragtag.tech/empowered-by-ragtag.svg" alt="Empowered by Ragtag"></a>`
 
 <figure>
-  <span class="ragtag-mark-background ragtag-mark-background-inverse"><img src="https://assets.ragtag.tech/empowered-by-ragtag-inverse.svg"></span>
+  <span class="ragtag-mark-background ragtag-mark-background-inverse"><img src="https://assets.ragtag.tech/empowered-by-ragtag-inverse.svg" alt="Empowered by Ragtag"></span>
   <figcaption>Over dark background</figcaption>
 </figure>
 
