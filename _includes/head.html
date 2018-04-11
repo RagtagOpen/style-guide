@@ -6,6 +6,9 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700" rel="stylesheet">
   <link rel="stylesheet" href="https://cloud.typography.com/6857376/7649992/css/fonts.css">
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  {% if page.extra_css %}
+  <link rel="stylesheet" href="{{ page.extra_css | relative_url }}">
+  {% endif %}
   <link rel="shortcut icon" type="image/x-icon" href="https://ragtag.org/favicon.ico">
   <meta property="og:image" content="https://assets.ragtag.tech/opengraph-share-image.png">
   <meta name="twitter:card" content="summary_large_image">

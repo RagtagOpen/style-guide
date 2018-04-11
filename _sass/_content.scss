@@ -175,6 +175,7 @@ code {
 
 .button {
   background: $orange-high-contrast;
+  border: 0;
   border-radius: 3px;
   box-shadow: $box-shadow;
   color: $white;
@@ -184,11 +185,18 @@ code {
   text-decoration: none;
   text-transform: uppercase;
   transition: 0.2s;
-  will-change: background-color;
+  will-change: background-color color;
 
   &:hover,
   &:focus,
   &:active {
     background-color: desaturate($orange, 10%);
+    outline: none;
+  }
+
+  &[disabled] {
+    background-color: $gray-light;
+    color: $gray;
+    pointer-events: none;
   }
 }

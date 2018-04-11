@@ -1,0 +1,139 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import 'variables';
+@import 'colors';
+@import 'typography';
+
+.page-content {
+  padding: 0 1rem;
+
+  .wrapper {
+    padding: 0;
+  }
+}
+
+.builder {
+  &-preview {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1;
+    margin: 1rem auto;
+    text-align: center;
+
+    .builder-mark {
+      box-sizing: border-box;
+      height: auto;
+      overflow: visible;
+      width: 100%;
+    }
+
+    &-background {
+      &-white {
+        background-color: $white;
+      }
+
+      &-black,
+      &-transparent-inverse {
+        background-color: $black;
+        color: $white;
+      }
+
+      &-transparent-inverse {
+        background-color: transparent;
+      }
+
+      &-gradient {
+        background-image: radial-gradient($orange-light, $orange);
+        color: $black;
+      }
+    }
+  }
+
+  &-text {
+    font-family: $font-display;
+    font-weight: 700;
+    text-align: center;
+  }
+}
+
+.builder-mark {
+  &-gradient {
+    .builder-mark-shadow {
+      stroke: none;
+    }
+  }
+
+  &-black,
+  &-transparent-inverse {
+    .builder-mark-type {
+      fill: $white;
+    }
+
+    .builder-mark-shadow {
+      fill: $black;
+      stroke: $white;
+    }
+  }
+}
+
+.form-field {
+  margin: 1rem auto;
+
+  &-width,
+  &-height {
+    float: left;
+    width: 48%;
+  }
+
+  &-width {
+    margin-right: 3.99%;
+  }
+}
+
+.form-buttons {
+  margin: 1rem auto;
+  text-align: center;
+
+  .button {
+    margin: 0 1rem;
+    min-width: 10em;
+  }
+}
+
+$input-border: #ced4da;
+$input-border-focus: #80bdff;
+$input-shadow-focus: rgba(0, 123, 255, 0.25);
+
+.form-control {
+  background-clip: padding-box;
+  background-color: $white;
+  border: 1px solid $input-border;
+  border-radius: 0.25rem;
+  color: $gray;
+  display: block;
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 0.375rem 0.75rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  width: 100%;
+
+  &:focus {
+    background-color: $white;
+    border-color: $input-border-focus;
+    box-shadow: 0 0 0 0.2rem $input-shadow-focus;
+    outline: 0;
+  }
+
+  &-label {
+    display: block;
+    margin: 0 0 0.25em;
+  }
+}
+
+select.form-control:not([size]):not([multiple]) {
+    height: calc(2.25rem + 2px);
+}
