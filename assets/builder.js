@@ -66,11 +66,11 @@
   inputs.textAbove.type = 'text';
   inputs.textAbove.id = 'id_text';
   inputs.textAbove.dataset.label = 'Text Above Mark';
-  inputs.textAbove.value = 'empowered by';
+  inputs.textAbove.value = '';
   inputs.textBelow.type = 'text';
   inputs.textBelow.id = 'id_text';
   inputs.textBelow.dataset.label = 'Text Below Mark';
-  inputs.textBelow.value = 'Chicago';
+  inputs.textBelow.value = '';
 
   var styles = {
     gradient: 'Orange Background, Black Text',
