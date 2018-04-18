@@ -17,4 +17,4 @@ deployment:
     branch: master
     commands:
       - sudo apt-get -y -qq install awscli
-      - aws cloudfront create-invalidation --distribution-id E1JSJN131ANO47 --paths *
+      - aws cloudfront create-invalidation --distribution-id E1JSJN131ANO47 --paths '/*'
