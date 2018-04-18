@@ -11,3 +11,11 @@ dependencies:
 test:
   post:
     - bundle exec htmlproofer ./_site --allow-hash-href --check-favicon --check-html --disable-external --empty-alt-ignore
+
+deployment:
+  prod:
+    branch: master
+    commands:
+      - sudo apt-get install python-dev python-pip
+      - sudo pip install awscli
+      - aws cloudfront create-invalidation --distribution-id E1JSJN131ANO47 --paths "*"
