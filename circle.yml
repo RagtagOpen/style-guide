@@ -16,6 +16,5 @@ deployment:
   prod:
     branch: master
     commands:
-      - sudo apt-get install python-dev python-pip
-      - sudo pip install awscli
+      - sudo apt-get -y -qq install awscli
       - aws cloudfront create-invalidation --distribution-id E1JSJN131ANO47 --paths "*"
