@@ -72,6 +72,8 @@ In applications where the full wordmark doesn't fit, such as social media avatar
 
 <a href="https://assets.ragtag.tech/ragtag-avatar.png" download class="button">Download Avatar</a>
 
+For favicons, please use `<link rel="icon" type="image/png" href="https://assets.ragtag.tech/favicon-48.png">`.
+
 ### Empowered by Ragtag Mark
 
 On all projects we support, unless otherwise noted, the Empowered by Ragtag Mark should appear in the footer of the site, with a link back to [ragtag.org](https://ragtag.org). Please replace `<project_name>` in the URL with the name of the project.
