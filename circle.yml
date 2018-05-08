@@ -18,4 +18,4 @@ deployment:
     commands:
       - sudo apt-get -y -qq install awscli
       - aws cloudfront create-invalidation --distribution-id E1JSJN131ANO47 --paths '/*'
-      - aws s3 sync ./assets/ s3://assets.ragtag.tech/
+      - aws s3 sync ./assets/ s3://assets.ragtag.tech/ --acl public-read
