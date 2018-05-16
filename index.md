@@ -106,6 +106,8 @@ When paired with a tagline like "Empowered by", the tagline's baseline should si
 
 ![Placement guide with tagline](https://assets.ragtag.tech/placement-guide-tagline.png)
 
+If you need to make custom graphics for events, social media, etc. [check out our custom graphic builder](/builder/).
+
 </section>
 
 <section markdown="1">
