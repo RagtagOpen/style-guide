@@ -24,6 +24,13 @@ permalink: /:slug:/
 markdown: kramdown
 plugins:
   - jekyll-seo-tag
+exclude:
+  - CNAME
+  - README.md
+  - circle.yml
+  - Gemfile
+  - Gemfile.lock
+
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
