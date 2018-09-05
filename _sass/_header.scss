@@ -52,3 +52,35 @@ html {
     // }
   }
 }
+
+.site-nav {
+  border-bottom: 1px solid $gray-light;
+  margin: 0.25rem 0 -0.5rem;
+
+  .wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &-link {
+    color: $gray;
+    display: inline-block;
+    font-size: 0.875rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.2s;
+    will-change: color;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: $orange;
+    }
+
+    &-current {
+      color: $orange;
+    }
+  }
+}

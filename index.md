@@ -10,6 +10,14 @@ We are a ragtag volunteer team of technologists, tech enthusiasts, political and
 
 </section>
 
+<section id="our-mission" markdown="1">
+
+## Mission
+
+Building a movement of technologists to amplify progressive organizing in innovative and high-impact&nbsp;ways.
+
+</section>
+
 <section markdown="1">
 
 ## Core Principles

@@ -31,3 +31,43 @@
     stroke: $white;
   }
 }
+
+
+.chd-mark-background,
+.chd-logo-background {
+  display: inline-block;
+  line-height: 1;
+  padding: 30px;
+}
+
+.chd-logo-background {
+  background: $purple;
+  padding: 0;
+
+  &-circle {
+    border-radius: 50%;
+    overflow: hidden;
+  }
+}
+
+.chd-mark {
+  &-primary {
+    fill: $purple;
+  }
+}
+
+.chd-mark-black-on-white {
+  background: $white;
+
+  .chd-mark-primary {
+    fill: $black;
+  }
+}
+
+.chd-mark-white-on-black {
+  background: $black;
+
+  .chd-mark-primary {
+    fill: $white;
+  }
+}

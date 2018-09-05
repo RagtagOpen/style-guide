@@ -93,7 +93,8 @@ code {
   word-break: break-all;
 }
 
-#intro {
+#intro,
+#our-mission {
   font-size: 1.5rem;
 
   @media (min-width: 768px) {
@@ -109,6 +110,7 @@ code {
 .color-swatches {
   list-style: none;
   margin: 1rem -0.5rem;
+  min-width: calc(100% + 1rem);
   padding: 0;
   width: auto;
 
@@ -144,6 +146,10 @@ code {
 
   &-gray-light {
     background-color: $gray-light;
+  }
+
+  &-chd-purple {
+    background-color: $purple;
   }
 
   &-label {
@@ -199,4 +205,16 @@ code {
     color: $gray;
     pointer-events: none;
   }
+}
+
+.chd-thumbnails {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.chd-thumb {
+  flex: 0 0 auto;
+  margin: 1rem;
+  width: calc(50% - 2rem);
 }
