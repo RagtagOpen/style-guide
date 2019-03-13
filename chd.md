@@ -77,7 +77,9 @@ For favicons, please use `<link rel="icon" href="https://assets.ragtag.tech/chd/
 For body copy please use the [native sans serif typeface](https://css-tricks.com/snippets/css/system-font-stack/). You can achieve this with the following CSS:
 
 ```css
-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans,
+  Ubuntu, Cantarell, "Helvetica Neue", sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol";
 ```
 
 _To improve accessibility, the base font size should be 18px._
