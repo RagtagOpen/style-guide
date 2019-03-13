@@ -44,3 +44,36 @@ jobs:
         path: /tmp/circleci-artifacts
     - store_artifacts:
         path: /tmp/circleci-test-results
+  deploy:
+    machine:
+      enabled: true
+    steps:
+      - checkout
+      - run:
+          name: Install AWS CLI
+          command: |
+            sudo apt-get -y -qq install awscli
+      - run:
+          name: Invalidate CloudFront distro for brand.ragtag.org
+          command: |
+            aws cloudfront create-invalidation --distribution-id E1JSJN131ANO47 --paths '/*'
+      - run:
+          name: Copy assets folder to assets.ragtag.tech
+          command: |
+            aws s3 sync ./assets/ s3://assets.ragtag.tech/ --acl public-read
+      - run:
+          name: Invalidate CloudFront distribution for assets.ragtag.tech
+          command: |
+            aws cloudfront create-invalidation --distribution-id E1N1GBDQRP84YH --paths '/*'
+
+workflows:
+  version: 2
+  build-and-deploy:
+    jobs:
+      - build
+      - deploy:
+          requires:
+            - build
+          filters:
+            branches:
+              only: master
