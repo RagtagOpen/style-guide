@@ -1,7 +1,7 @@
 version: 2
 jobs:
   build:
-    working_directory: ~/Ragtagteam/style-guide
+    working_directory: ~/RagtagOpen/style-guide
     parallelism: 1
     shell: /bin/bash --login
     environment:
@@ -9,41 +9,42 @@ jobs:
       CIRCLE_TEST_REPORTS: /tmp/circleci-test-results
       NOKOGIRI_USE_SYSTEM_LIBRARIES: true
     docker:
-    - image: circleci/build-image:ubuntu-14.04-XXL-upstart-1189-5614f37
-      command: /sbin/init
+      - image: circleci/build-image:ubuntu-14.04-XXL-upstart-1189-5614f37
+        command: /sbin/init
     steps:
-    - checkout
-    - run: mkdir -p $CIRCLE_ARTIFACTS $CIRCLE_TEST_REPORTS
-    - run:
-        working_directory: ~/Ragtagteam/style-guide
-        command: rm -f Ragtagteam/style-guide/.rvmrc; echo 2.3.4 > Ragtagteam/style-guide/.ruby-version; rvm use 2.3.4 --default
-    - restore_cache:
-        keys:
-        - v1-dep-{{ .Branch }}-
-        - v1-dep-master-
-        - v1-dep-
-    - run: echo -e "export RAILS_ENV=test\nexport RACK_ENV=test" >> $BASH_ENV
-    - run: 'bundle check --path=vendor/bundle || bundle install --path=vendor/bundle
-        --jobs=4 --retry=3 '
-    - run: bundle exec jekyll build
-    - save_cache:
-        key: v1-dep-{{ .Branch }}-{{ epoch }}
-        paths:
-        - vendor/bundle
-        - ~/virtualenvs
-        - ~/.m2
-        - ~/.ivy2
-        - ~/.bundle
-        - ~/.go_workspace
-        - ~/.gradle
-        - ~/.cache/bower
-    - run: bundle exec htmlproofer ./_site --allow-hash-href --check-favicon --check-html --disable-external --empty-alt-ignore
-    - store_test_results:
-        path: /tmp/circleci-test-results
-    - store_artifacts:
-        path: /tmp/circleci-artifacts
-    - store_artifacts:
-        path: /tmp/circleci-test-results
+      - checkout
+      - run: mkdir -p $CIRCLE_ARTIFACTS $CIRCLE_TEST_REPORTS
+      - run:
+          working_directory: ~/RagtagOpen/style-guide
+          command: rm -f RagtagOpen/style-guide/.rvmrc; echo 2.3.4 > RagtagOpen/style-guide/.ruby-version; rvm use 2.3.4 --default
+      - restore_cache:
+          keys:
+            - v1-dep-{{ .Branch }}-
+            - v1-dep-master-
+            - v1-dep-
+      - run: echo -e "export RAILS_ENV=test\nexport RACK_ENV=test" >> $BASH_ENV
+      - run:
+          "bundle check --path=vendor/bundle || bundle install --path=vendor/bundle
+          --jobs=4 --retry=3 "
+      - run: bundle exec jekyll build
+      - save_cache:
+          key: v1-dep-{{ .Branch }}-{{ epoch }}
+          paths:
+            - vendor/bundle
+            - ~/virtualenvs
+            - ~/.m2
+            - ~/.ivy2
+            - ~/.bundle
+            - ~/.go_workspace
+            - ~/.gradle
+            - ~/.cache/bower
+      - run: bundle exec htmlproofer ./_site --allow-hash-href --check-favicon --check-html --disable-external --empty-alt-ignore
+      - store_test_results:
+          path: /tmp/circleci-test-results
+      - store_artifacts:
+          path: /tmp/circleci-artifacts
+      - store_artifacts:
+          path: /tmp/circleci-test-results
   deploy:
     machine:
       enabled: true
