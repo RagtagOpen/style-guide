@@ -13,6 +13,10 @@ jobs:
             - v2-dep-{{ .Branch }}-
             - v2-dep-master-
             - v2-dep-
+      - run:
+          name: Fix Locale
+          command: |
+            sudo sed -i -e 's/# en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/' /etc/locale.gen && sudo dpkg-reconfigure --frontend=noninteractive locales
       - run: echo -e "export RAILS_ENV=test\nexport RACK_ENV=test" >> $BASH_ENV
       - run:
           name: Configure Bundler
