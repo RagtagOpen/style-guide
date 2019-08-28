@@ -8,7 +8,6 @@ jobs:
       - image: circleci/ruby:2.3.7
     steps:
       - checkout
-      - run: mkdir -p $CIRCLE_ARTIFACTS $CIRCLE_TEST_REPORTS
       - restore_cache:
           keys:
             - v2-dep-{{ .Branch }}-
@@ -31,12 +30,6 @@ jobs:
             - ~/.gradle
             - ~/.cache/bower
       - run: bundle exec htmlproofer ./_site --allow-hash-href --check-favicon --check-html --disable-external --empty-alt-ignore
-      - store_test_results:
-          path: /tmp/circleci-test-results
-      - store_artifacts:
-          path: /tmp/circleci-artifacts
-      - store_artifacts:
-          path: /tmp/circleci-test-results
   deploy:
     machine:
       enabled: true
