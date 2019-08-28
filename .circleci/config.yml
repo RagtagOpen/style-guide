@@ -9,7 +9,7 @@ jobs:
       CIRCLE_TEST_REPORTS: /tmp/circleci-test-results
       NOKOGIRI_USE_SYSTEM_LIBRARIES: true
     docker:
-      - image: circleci/build-image:ubuntu-14.04-XXL-upstart-1189-5614f37
+      - image: circleci/ruby
         command: /sbin/init
     steps:
       - checkout
