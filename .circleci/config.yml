@@ -9,13 +9,10 @@ jobs:
       CIRCLE_TEST_REPORTS: /tmp/circleci-test-results
       NOKOGIRI_USE_SYSTEM_LIBRARIES: true
     docker:
-      - image: circleci/ruby
+      - image: circleci/ruby:2.3.7
     steps:
       - checkout
       - run: mkdir -p $CIRCLE_ARTIFACTS $CIRCLE_TEST_REPORTS
-      - run:
-          working_directory: ~/RagtagOpen/style-guide
-          command: rm -f RagtagOpen/style-guide/.rvmrc; echo 2.3.4 > RagtagOpen/style-guide/.ruby-version; rvm use 2.3.4 --default
       - restore_cache:
           keys:
             - v1-dep-{{ .Branch }}-
