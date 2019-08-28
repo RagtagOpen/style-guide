@@ -15,9 +15,12 @@ jobs:
             - v2-dep-
       - run: echo -e "export RAILS_ENV=test\nexport RACK_ENV=test" >> $BASH_ENV
       - run:
-          name: install dependencies
+          name: Configure Bundler
           command: |
             sudo gem update --system
+            sudo gem uninstall bundler
+            echo 'export BUNDLER_VERSION=$(cat Gemfile.lock | tail -1 | tr -d " ")' >> $BASH_ENV
+            source $BASH_ENV
             sudo gem install bundler
       - run:
           "bundle check --path=vendor/bundle || bundle install --path=vendor/bundle
