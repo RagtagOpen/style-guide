@@ -1,6 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 131.6 131" width="131.6" height="131" class="helpdesk-logo">
   <style>.helpdesk-logo-primary{fill:#6c41db}</style>
-  <path fill="#fff" d="M18 14.4h92.8V116H18z"/>
   <path class="helpdesk-logo-primary" d="M48.1 57.7l40.9.2 1.6-7.7-41-.1zM44.6 74.9l30.8.1 1.6-7.6-30.9-.1z"/>
   <path class="helpdesk-logo-primary" d="M101.9 0H29.7C13.3 0 0 13.2 0 29.6v71.8C0 117.8 13.3 131 29.7 131h72.1c16.4 0 29.7-13.2 29.7-29.6V29.6C131.6 13.2 118.3 0 101.9 0zm5.6 38.6l-9.9 49.1c-1 4.8-5.8 8.6-10.9 8.6l-46.1-.2-12.8 10.1c-1.8 1.4-4.1.4-3.7-1.6l1.7-8.6 2.8-13.9 8.8-43.5c1-4.8 5.8-8.6 10.9-8.6l52.1.2c4.8.1 8 3.8 7.1 8.4z"/>
 </svg>

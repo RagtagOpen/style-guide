@@ -32,15 +32,14 @@
   }
 }
 
-
-.chd-mark-background,
-.chd-logo-background {
+.helpdesk-mark-background,
+.helpdesk-logo-background {
   display: inline-block;
   line-height: 1;
   padding: 30px;
 }
 
-.chd-logo-background {
+.helpdesk-logo-background {
   background: $purple;
   padding: 0;
 
@@ -50,24 +49,24 @@
   }
 }
 
-.chd-mark {
+.helpdesk-mark {
   &-primary {
     fill: $purple;
   }
 }
 
-.chd-mark-black-on-white {
+.helpdesk-mark-black-on-white {
   background: $white;
 
-  .chd-mark-primary {
+  .helpdesk-mark-primary {
     fill: $black;
   }
 }
 
-.chd-mark-white-on-black {
+.helpdesk-mark-white-on-black {
   background: $black;
 
-  .chd-mark-primary {
+  .helpdesk-mark-primary {
     fill: $white;
   }
 }
