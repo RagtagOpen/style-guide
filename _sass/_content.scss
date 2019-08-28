@@ -148,7 +148,7 @@ code {
     background-color: $gray-light;
   }
 
-  &-chd-purple {
+  &-helpdesk-purple {
     background-color: $purple;
   }
 
@@ -207,13 +207,13 @@ code {
   }
 }
 
-.chd-thumbnails {
+.helpdesk-thumbnails {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-.chd-thumb {
+.helpdesk-thumb {
   flex: 0 0 auto;
   margin: 1rem;
   width: calc(50% - 2rem);

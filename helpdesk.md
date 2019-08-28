@@ -4,9 +4,9 @@ layout: default
 
 <section id="intro" markdown="1">
 
-## Campaign Helpdesk
+## Ragtag Helpdesk
 
-Campaign Helpdesk is a project by <a href="https://ragtag.org" title="Ragtag">Ragtag volunteers</a> with the aim of providing tech support for progressive campaigns and organizations.
+Ragtag Helpdesk is a project by <a href="https://ragtag.org" title="Ragtag">Ragtag volunteers</a> with the aim of providing tech support for progressive campaigns and organizations.
 
 </section>
 
@@ -19,7 +19,7 @@ Campaign Helpdesk is a project by <a href="https://ragtag.org" title="Ragtag">Ra
 The primary mark should only be used in the primary purple brand color.
 
 <p>
-  <span class="chd-mark-background">{% include helpdesk-mark.svg %}</span>
+  <span class="helpdesk-mark-background">{% include helpdesk-mark.svg %}</span>
 </p>
 
 ### Alternate Wordmark
@@ -28,12 +28,12 @@ Where necessary the mark may also be used in white on black or black on white.
 
 <div>
   <figure>
-    <span class="chd-mark-background chd-mark-black-on-white">{% include helpdesk-mark.svg %}</span>
+    <span class="helpdesk-mark-background helpdesk-mark-black-on-white">{% include helpdesk-mark.svg %}</span>
     <figcaption>Single color, on light background</figcaption>
   </figure>
 
   <figure>
-    <span class="chd-mark-background chd-mark-white-on-black">{% include helpdesk-mark.svg %}</span>
+    <span class="helpdesk-mark-background helpdesk-mark-white-on-black">{% include helpdesk-mark.svg %}</span>
     <figcaption>Single color, on dark background</figcaption>
   </figure>
 </div>
@@ -44,19 +44,19 @@ In applications where the full wordmark doesn't fit, such as social media avatar
 
 <div>
   <figure>
-    <span class="chd-logo-background chd-logo-background-square">{% include helpdesk-logo.svg %}</span>
+    <span class="helpdesk-logo-background helpdesk-logo-background-square">{% include helpdesk-logo.svg %}</span>
     <figcaption>Square</figcaption>
   </figure>
 
   <figure>
-    <span class="chd-logo-background chd-logo-background-circle">{% include helpdesk-logo.svg %}</span>
+    <span class="helpdesk-logo-background helpdesk-logo-background-circle">{% include helpdesk-logo.svg %}</span>
     <figcaption>Square, cropped by social network</figcaption>
   </figure>
 </div>
 
-<a href="https://assets.ragtag.tech/chd-square-avatar.png" download class="button">Download Avatar</a>
+<a href="https://assets.ragtag.tech/helpdesk/square-avatar.png" download class="button">Download Avatar</a>
 
-For favicons, please use `<link rel="icon" href="https://assets.ragtag.tech/chd/favicon.ico">`.
+For favicons, please use `<link rel="icon" href="https://assets.ragtag.tech/helpdesk/favicon.ico">`.
 
 </section>
 
@@ -74,7 +74,7 @@ For favicons, please use `<link rel="icon" href="https://assets.ragtag.tech/chd/
 
 ### Tertiary Typeface: Native San Serif
 
-For body copy please use the [native sans serif typeface](https://css-tricks.com/snippets/css/system-font-stack/). You can achieve this with the following CSS:
+For body copy please use the [native sans serif typeface](https://css-tricks.com/snippets/css/system-font-stack/). This can be achieved this with the following CSS:
 
 ```css
 font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans,
@@ -92,7 +92,7 @@ _To improve accessibility, the base font size should be 18px._
 
 <ul class="color-swatches">
   <li>
-    <span class="color-swatch color-swatch-chd-purple"></span>
+    <span class="color-swatch color-swatch-helpdesk-purple"></span>
     <span class="color-swatch-label">Purple</span>
     <dl class="color-swatch-values">
       <dt>Hex</dt> <dd>#6c41db</dd>
@@ -110,52 +110,52 @@ _To improve accessibility, the base font size should be 18px._
 
 The following may be used for promotional materials or merchandise.
 
-<div class="chd-thumbnails">
-  <a href="https://assets.ragtag.tech/chd/helpdesk-single-1.svg" title="Click to download" class="chd-thumb">
+<div class="helpdesk-thumbnails">
+  <a href="https://assets.ragtag.tech/helpdesk/helpdesk-single-1.svg" title="Click to download" class="helpdesk-thumb">
     {% include helpdesk-single-1.svg %}
   </a>
 
-  <a href="https://assets.ragtag.tech/chd/helpdesk-single-2.svg" title="Click to download" class="chd-thumb">
+  <a href="https://assets.ragtag.tech/helpdesk/helpdesk-single-2.svg" title="Click to download" class="helpdesk-thumb">
     {% include helpdesk-single-2.svg %}
   </a>
 
-  <a href="https://assets.ragtag.tech/chd/helpdesk-single-3.svg" title="Click to download" class="chd-thumb">
+  <a href="https://assets.ragtag.tech/helpdesk/helpdesk-single-3.svg" title="Click to download" class="helpdesk-thumb">
     {% include helpdesk-single-3.svg %}
   </a>
 
-  <a href="https://assets.ragtag.tech/chd/helpdesk-single-4.svg" title="Click to download" class="chd-thumb">
+  <a href="https://assets.ragtag.tech/helpdesk/helpdesk-single-4.svg" title="Click to download" class="helpdesk-thumb">
     {% include helpdesk-single-4.svg %}
   </a>
 
-  <a href="https://assets.ragtag.tech/chd/helpdesk-single-5.svg" title="Click to download" class="chd-thumb">
+  <a href="https://assets.ragtag.tech/helpdesk/helpdesk-single-5.svg" title="Click to download" class="helpdesk-thumb">
     {% include helpdesk-single-5.svg %}
   </a>
 
-  <a href="https://assets.ragtag.tech/chd/helpdesk-single-6.svg" title="Click to download" class="chd-thumb">
+  <a href="https://assets.ragtag.tech/helpdesk/helpdesk-single-6.svg" title="Click to download" class="helpdesk-thumb">
     {% include helpdesk-single-6.svg %}
   </a>
 
-  <a href="https://assets.ragtag.tech/chd/helpdesk-pair-1.svg" title="Click to download" class="chd-thumb">
+  <a href="https://assets.ragtag.tech/helpdesk/helpdesk-pair-1.svg" title="Click to download" class="helpdesk-thumb">
     {% include helpdesk-pair-1.svg %}
   </a>
 
-  <a href="https://assets.ragtag.tech/chd/helpdesk-pair-2.svg" title="Click to download" class="chd-thumb">
+  <a href="https://assets.ragtag.tech/helpdesk/helpdesk-pair-2.svg" title="Click to download" class="helpdesk-thumb">
     {% include helpdesk-pair-2.svg %}
   </a>
 
-  <a href="https://assets.ragtag.tech/chd/helpdesk-pair-3.svg" title="Click to download" class="chd-thumb">
+  <a href="https://assets.ragtag.tech/helpdesk/helpdesk-pair-3.svg" title="Click to download" class="helpdesk-thumb">
     {% include helpdesk-pair-3.svg %}
   </a>
 
-  <a href="https://assets.ragtag.tech/chd/helpdesk-pair-4.svg" title="Click to download" class="chd-thumb">
+  <a href="https://assets.ragtag.tech/helpdesk/helpdesk-pair-4.svg" title="Click to download" class="helpdesk-thumb">
     {% include helpdesk-pair-4.svg %}
   </a>
 
-  <a href="https://assets.ragtag.tech/chd/helpdesk-pair-5.svg" title="Click to download" class="chd-thumb">
+  <a href="https://assets.ragtag.tech/helpdesk/helpdesk-pair-5.svg" title="Click to download" class="helpdesk-thumb">
     {% include helpdesk-pair-5.svg %}
   </a>
 
-  <a href="https://assets.ragtag.tech/chd/helpdesk-pair-6.svg" title="Click to download" class="chd-thumb">
+  <a href="https://assets.ragtag.tech/helpdesk/helpdesk-pair-6.svg" title="Click to download" class="helpdesk-thumb">
     {% include helpdesk-pair-6.svg %}
   </a>
 
@@ -167,7 +167,7 @@ The following may be used for promotional materials or merchandise.
 
 ## Please Don't
 
-- Don't use Campaign Help Desk, it's always Campaign Helpdesk
+- Don't use Ragtag Help Desk, it's always Ragtag Helpdesk
 - Don't squish or stretch the logo
 - Don't use the Gotham or Operator typefaces without a valid license to do so
 
