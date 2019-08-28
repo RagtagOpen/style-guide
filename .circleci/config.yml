@@ -10,7 +10,6 @@ jobs:
       NOKOGIRI_USE_SYSTEM_LIBRARIES: true
     docker:
       - image: circleci/ruby
-        command: /sbin/init
     steps:
       - checkout
       - run: mkdir -p $CIRCLE_ARTIFACTS $CIRCLE_TEST_REPORTS
