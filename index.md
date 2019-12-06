@@ -109,7 +109,7 @@ On all projects we support, unless otherwise noted, the Empowered by Ragtag Mark
 
 <figure>
   <span class="ragtag-mark-background ragtag-mark-background-inverse"><img src="https://assets.ragtag.tech/empoderado-de-ragtag-inverse.svg" alt="Empoderado de Ragtag"></span>
-  <figcaption>Over dark background</figcaption>
+  <figcaption>Over dark background, Español</figcaption>
 </figure>
 
 `<a href="https://ragtag.org/?utm_medium=web&amp;utm_source=<project_name>&amp;utm_name=empowered-badge"><img src="https://assets.ragtag.tech/empoderado-de-ragtag-inverse.svg" alt="Empoderado de Ragtag"></a>`
