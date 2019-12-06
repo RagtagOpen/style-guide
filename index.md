@@ -94,11 +94,25 @@ On all projects we support, unless otherwise noted, the Empowered by Ragtag Mark
 `<a href="https://ragtag.org/?utm_medium=web&amp;utm_source=<project_name>&amp;utm_name=empowered-badge"><img src="https://assets.ragtag.tech/empowered-by-ragtag.svg" alt="Empowered by Ragtag"></a>`
 
 <figure>
+  <span class="ragtag-mark-background"><img src="https://assets.ragtag.tech/empoderado-de-ragtag.svg" alt="Empoderado de Ragtag"></span>
+  <figcaption>Over light background, Español</figcaption>
+</figure>
+
+`<a href="https://ragtag.org/?utm_medium=web&amp;utm_source=<project_name>&amp;utm_name=empowered-badge"><img src="https://assets.ragtag.tech/empoderado-de-ragtag.svg" alt="Empoderado de Ragtag"></a>`
+
+<figure>
   <span class="ragtag-mark-background ragtag-mark-background-inverse"><img src="https://assets.ragtag.tech/empowered-by-ragtag-inverse.svg" alt="Empowered by Ragtag"></span>
   <figcaption>Over dark background</figcaption>
 </figure>
 
 `<a href="https://ragtag.org/?utm_medium=web&amp;utm_source=<project_name>&amp;utm_name=empowered-badge"><img src="https://assets.ragtag.tech/empowered-by-ragtag-inverse.svg" alt="Empowered by Ragtag"></a>`
+
+<figure>
+  <span class="ragtag-mark-background ragtag-mark-background-inverse"><img src="https://assets.ragtag.tech/empoderado-de-ragtag-inverse.svg" alt="Empoderado de Ragtag"></span>
+  <figcaption>Over dark background</figcaption>
+</figure>
+
+`<a href="https://ragtag.org/?utm_medium=web&amp;utm_source=<project_name>&amp;utm_name=empowered-badge"><img src="https://assets.ragtag.tech/empoderado-de-ragtag-inverse.svg" alt="Empoderado de Ragtag"></a>`
 
 </section>
 
@@ -187,12 +201,12 @@ CSS gradient for wordmark background: `background-image: radial-gradient(#ff8447
 
 ## Please Don't
 
-* Don't use RagTag, it's always Ragtag
-* Don't squish or stretch the logo
-* Don't use the lighter color of the gradient background for anything outside of the gradient
-* Don't set the wordmark in any color other than black or white
-* Don't make the white drop shadow in the logo transparent
-* Don't copy the mark to a project, always link back to the version hosted here
-* Don't use the Operator typeface without a valid license to do so
+- Don't use RagTag, it's always Ragtag
+- Don't squish or stretch the logo
+- Don't use the lighter color of the gradient background for anything outside of the gradient
+- Don't set the wordmark in any color other than black or white
+- Don't make the white drop shadow in the logo transparent
+- Don't copy the mark to a project, always link back to the version hosted here
+- Don't use the Operator typeface without a valid license to do so
 
 </section>
